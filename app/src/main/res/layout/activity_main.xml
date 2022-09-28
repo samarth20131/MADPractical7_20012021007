@@ -17,19 +17,20 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
+            app:title="@string/app_name"
             app:layout_scrollFlags="scroll|snap|enterAlways"
             android:layout_height="?attr/actionBarSize"/>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nsv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appbar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:id="@+id/nsv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/appbar"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -104,7 +105,7 @@
                         />
 
                 <Button
-
+                    android:id="@+id/btn1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
@@ -133,6 +134,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:cardElevation="20dp"
+            android:visibility="invisible"
             android:layout_margin="20dp" >
 
 
@@ -157,13 +159,42 @@
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toBottomOf="@id/img_alarm2"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:layout_margin="10dp"
                     android:text="@string/text4"
                     android:textStyle="bold"
-                    android:textSize="22sp" />
+                    app:barrierMargin="10dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/text4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="10dp"
+                    android:text="@string/text4"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/green"
+                    android:drawableLeft="@drawable/ic_baseline_alarm_off_24"
+                    android:text="@string/cancel_alarm"
+                    app:layout_constraintTop_toBottomOf="@+id/text5"
+                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
-    </androidx.core.widget.NestedScrollView>
+<!--    </androidx.core.widget.NestedScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

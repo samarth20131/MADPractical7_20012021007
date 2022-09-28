@@ -5,6 +5,7 @@
     <string name="text3">Check Current time by looking below real digital clock.</string>
     <string name="create_alarm">Create Alarm</string>
     <string name="text4">Set Alarm Time:</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
 
 
 </resources>
