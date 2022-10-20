@@ -51,7 +51,7 @@
                     <ImageView
                         android:id="@+id/img_alarm"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="180dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/alarm_img"
                         app:layout_constraintStart_toStartOf="parent"
@@ -100,11 +100,10 @@
                         app:layout_constraintTop_toBottomOf="@id/text3"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        android:format12Hour="hh:mm:ss a MMM, dd yyyy"
                         android:padding="10dp"
                         android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:format12Hour="hh:mm ss a MMM, dd yyyy"
-                        />
+                        android:textStyle="bold"/>
 
                     <Button
                         android:id="@+id/btn_create_alarm"
@@ -133,7 +132,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:cardElevation="20dp"
-                android:visibility="visible"
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginVertical="30dp">
 
@@ -144,7 +142,7 @@
                     <ImageView
                         android:id="@+id/img_alarm2"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="180dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/alarm_clock2"
                         app:layout_constraintStart_toStartOf="parent"
